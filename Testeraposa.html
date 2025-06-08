@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIOS DE YBACUO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .btn-pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+            }
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+            }
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center px-4 py-12">
+    <div class="text-center max-w-4xl mx-auto">
+        <!-- Título principal -->
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-8 transform hover:scale-105 transition duration-500">
+            FIOS DE <span class="bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text">YBACUO</span>
+        </h1>
+        
+        <!-- Botão de compra -->
+        <div class="mt-12">
+            <a 
+                href="https://pag.ae/7_JWQmt7Q"
+                target="_blank"
+                class="btn-pulse inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full text-lg md:text-xl transition-all duration-300 transform hover:scale-105 shadow-xl"
+            >
+                COMPRAR AGORA
+            </a>
+        </div>
+        
+        <!-- Efeito de fios decorativos -->
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-0 opacity-10">
+            <div class="absolute w-1 h-20 bg-blue-500 animate-move" style="top:10%; left:10%; animation-delay: 0s;"></div>
+            <div class="absolute w-1 h-32 bg-blue-500 animate-move" style="top:30%; left:20%; animation-delay: 2s;"></div>
+            <div class="absolute w-1 h-24 bg-blue-600 animate-move" style="top:70%; left:15%; animation-delay: 1s;"></div>
+            <div class="absolute w-1 h-28 bg-blue-400 animate-move" style="top:40%; right:20%; animation-delay: 3s;"></div>
+            <div class="absolute w-1 h-20 bg-blue-300 animate-move" style="top:20%; right:10%; animation-delay: 0.5s;"></div>
+        </div>
+    </div>
+
+    <!-- YouTube channel link -->
+    <div class="mt-16 text-center text-gray-500 text-sm">
+        <p>Conheça também nosso canal no YouTube:</p>
+        <a href="https://www.youtube.com/@Sonarzyzz-oficial" 
+           target="_blank" 
+           class="text-blue-500 hover:text-blue-700 transition duration-300">
+           @Sonarzyzz-oficial
+        </a>
+    </div>
+
+    <style>
+        .animate-move {
+            animation: move 8s linear infinite;
+        }
+        @keyframes move {
+            0% {t
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+
+    <script>
+        // Efeito de confirmação ao clicar no botão
+        document.querySelector('a').addEventListener('click', function(e) {
+            const btn = e.target;
+            btn.classList.add('animate-ping');
+            setTimeout(() => {
+                btn.classList.remove('animate-ping');
+            }, 500);
+        });
+    </script>
+</body>
+</html>
